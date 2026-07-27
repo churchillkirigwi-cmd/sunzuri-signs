@@ -155,3 +155,103 @@ padding:20px;
 background:#000;
 color:#777;
 }
+
+/* ==========================================
+   MOBILE & TABLET RESPONSIVE STYLES
+   ========================================== */
+
+/* General Mobile Improvements */
+html, body {
+  overflow-x: hidden; /* Prevents unwanted horizontal scrolling */
+}
+
+/* Adjustments for Mobile Screens (768px and smaller) */
+@media (max-width: 768px) {
+
+  /* 1. Navbar Adjustments */
+  .navbar {
+    padding: 12px 5%;
+    align-items: center;
+  }
+
+  .site-logo {
+    height: 38px; /* Slightly scaled down for small screens */
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+
+  /* 2. Hero Section Adjustments */
+  .hero-content {
+    padding: 15px;
+  }
+
+  .glow {
+    font-size: 28px; /* Reduces large font so it fits mobile screens without breaking */
+    line-height: 1.3;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .btns {
+    flex-direction: column; /* Stacks buttons vertically on mobile for easier tapping */
+    width: 100%;
+    max-width: 280px;
+    margin: 20px auto 0;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+    padding: 14px 20px; /* Bigger touch target for mobile thumbs */
+  }
+
+  /* 3. Section & Typography Spacing */
+  .section {
+    padding: 60px 5%; /* Less side padding on small screens */
+  }
+
+  .section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  /* 4. Grid Adjustments (Services & Projects) */
+  .grid {
+    /* Changes from 3 columns down to 1 column on small phones */
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .card img {
+    height: 220px;
+    object-fit: cover; /* Keeps project photos neat without distortion */
+    border-radius: 8px;
+  }
+
+  /* 5. Contact Page Styling Fixes */
+  .contact-card {
+    padding: 10px;
+  }
+
+  footer {
+    padding: 30px 5%;
+    font-size: 13px;
+  }
+}
+
+/* Tablet Screens (between 769px and 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+  }
+}
