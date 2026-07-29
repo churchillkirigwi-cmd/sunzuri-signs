@@ -197,8 +197,13 @@ html, body {
     line-height: 1.3;
   }
 
+  .hero{
+    height:70vh;
+  }
+  
   .hero-banner{
-     object-fit:contain;
+      object-fit:cover;
+      object-position:center center;
   }
 
   .hero-content p {
